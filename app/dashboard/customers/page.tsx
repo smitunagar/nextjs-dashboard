@@ -9,13 +9,12 @@ const lusitana = Lusitana({
   subsets: ['latin'],
 });
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams?: {
+export default async function Page(props: {
+  searchParams?: Promise<{
     query?: string;
-  };
+  }>;
 }) {
+  const searchParams = await props.searchParams;
   const query = searchParams?.query || '';
 
   return (
