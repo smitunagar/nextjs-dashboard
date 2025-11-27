@@ -3,6 +3,8 @@ import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { Lusitana } from 'next/font/google';
 
+export const dynamic = 'force-dynamic';
+
 const lusitana = Lusitana({
   weight: ['400', '700'],
   subsets: ['latin'],

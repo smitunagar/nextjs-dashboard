@@ -4,6 +4,8 @@ import CustomersTable from '@/app/ui/customers/table';
 import { Suspense } from 'react';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 
+export const dynamic = 'force-dynamic';
+
 const lusitana = Lusitana({
   weight: ['400', '700'],
   subsets: ['latin'],
